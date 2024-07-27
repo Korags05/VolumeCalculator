@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/cylinder_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cylinder">
+
+    <TextView
+        android:id="@+id/cylinderCalc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/productsans"
+        android:text="Cylinder Volume"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="normal"
+        android:textColor="#4D1301"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CylinderRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:hint="enter radius"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cylinderCalc" />
+
+
+    <EditText
+        android:id="@+id/CylinderHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="69dp"
+        android:hint="enter height"
+        android:fontFamily="@font/productsans"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/CylinderCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CylinderRadius" />
+
+    <Button
+        android:id="@+id/CylinderCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:text="Calculate"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CylinderHeight" />
+
+    <TextView
+        android:id="@+id/CylinderResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CylinderCalc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

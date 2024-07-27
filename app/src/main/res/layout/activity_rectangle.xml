@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/rect_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rectangle">
+
+    <TextView
+        android:id="@+id/RectCalc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/productsans"
+        android:text="Cuboid Volume"
+        android:textAlignment="center"
+        android:textColor="#3A0014"
+        android:textSize="32sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lenght"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:hint="enter length"
+        android:fontFamily="@font/productsans"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RectCalc" />
+
+    <EditText
+        android:id="@+id/RectHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:hint="enter height"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lenght" />
+
+    <EditText
+        android:id="@+id/breadth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:hint="enter breadth"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RectHeight" />
+
+    <Button
+        android:id="@+id/Vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breadth" />
+
+    <TextView
+        android:id="@+id/RectRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/productsans"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vol" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
